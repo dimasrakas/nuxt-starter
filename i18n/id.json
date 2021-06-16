@@ -1,0 +1,32 @@
+{
+  "common": {
+    "addNew": "Tambah baru",
+    "cancel": "Batal",
+    "close": "Tutup",
+    "save": "Simpan",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "login": "Login",
+    "logout": "Logout",
+    "forgotPassword": "Forgot Password",
+    "changePassword": "Change Password",
+    "resetPassword": "Reset Password",
+    "viewAll": "View All",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "open": "Open",
+    "action": "Action",
+    "options": "Options",
+    "filter": "Sortir",
+    "search": "Cari",
+    "createdBy": "Created by",
+    "createdDate": "Created date",
+    "enable": "Enable",
+    "disabled": "Disable",
+    "turnOn": "Turn On",
+    "turnOff": "Turn Off"
+  },
+  "dashboard": "Dashboard"
+}
