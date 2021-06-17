@@ -1,4 +1,4 @@
-# nuxt2-starter
+# My Nuxt JS
 
 ### Nuxt Plugins
 
@@ -12,10 +12,15 @@
 - [`@nuxtjs/sentry`](https://github.com/nuxt-community/google-fonts-module) - Google Fonts module for NuxtJS
 
 ### Optional
+
 - [`nuxt-vue-multiselect`](https://github.com/spektrummedia/nuxt-vue-multiselect) - Single / multiple select plugin for Nuxt.js using vue-multiselect.
 - [`nuxt-google-optimize`](https://github.com/nuxt-community/google-optimize-module) - SSR friendly Google Optimize module for Nuxt.js.
 
-FuseJS
+### Optional
+
+[`FuseJS`](https://github.com/spektrummedia/nuxt-vue-multiselect) - FuseJSSingle / multiple select plugin for Nuxt.js using vue-multiselect
+
+
 Aos
 https://vcalendar.io/
 https://phoenixwong.github.io/vue2-timepicker/

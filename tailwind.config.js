@@ -14,11 +14,12 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
+      display: ['Poppins', 'sans-serif'],
       sans: ['Hind Madurai', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
     },
 
-    //Colors
+    // Colors
     colors: {
       transparent: 'transparent',
       black: '#000',
@@ -76,5 +77,9 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/aspect-ratio'),
+  ],
 }
