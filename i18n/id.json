@@ -9,6 +9,7 @@
     "view": "View",
     "login": "Login",
     "logout": "Logout",
+    "refresh": "Muat Ulang",
     "forgotPassword": "Forgot Password",
     "changePassword": "Change Password",
     "resetPassword": "Reset Password",
