@@ -10,6 +10,7 @@
               items-center
               justify-center
               flex-1
+              mt-5
               overflow-hidden
               text-center
               bg-white
@@ -20,10 +21,7 @@
               <h3 class="text-4xl font-bold leading-none md:text-5xl">Kitabisa.com</h3>
               <p class="text-xl font-light text-gray-800">Clone with TailwindCSS only</p>
             </div>
-            <img
-              src="https://3.bp.blogspot.com/-cA93BTgAH40/WdoI08ydP1I/AAAAAAAAAE0/LBAcvvLR4LkhnOdZd2wEwLGejc__9vsLgCLcBGAs/s1600/kita%2Bbisa%2Bpic.png"
-              class="w-2/3 rounded-t-3xl"
-            />
+            <img src="/kitabisa.png" class="w-2/3 rounded-t-3xl" />
           </NuxtLink>
           <NuxtLink
             to="/clone-project/kitabisa/with-vue-nuxtjs"
@@ -32,6 +30,7 @@
               items-center
               justify-center
               flex-1
+              mt-5
               overflow-hidden
               text-center
               bg-white

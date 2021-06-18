@@ -1,6 +1,7 @@
 import i18n from './i18n'
 
 export default {
+  ssr: true,
   target: 'static',
   head: {
     title: 'Nuxt Starter Template by @dimasrakas',
@@ -10,19 +11,6 @@ export default {
       { hid: 'description', name: 'description', content: '' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' }],
-  },
-  pwa: {
-    manifest: {
-      lang: 'en',
-      name: 'dimasrakas',
-      short_name: 'dimasrakas',
-      display: 'standalone',
-      theme_color: '#007aff',
-    },
-    icons: {
-      /* icon options */
-      iconFileName: process.env.NODE_ENV === 'staging' ? 'icon.png' : 'pwa-ordercollection.png',
-    },
   },
   css: [],
   layoutTransition: {
@@ -36,6 +24,7 @@ export default {
   plugins: [],
   components: ['~/components', '~/components/icons/Md'],
   buildModules: [
+    '@nuxtjs/pwa',
     '@nuxtjs/eslint-module',
     '@nuxtjs/device',
     '@nuxtjs/tailwindcss',
@@ -55,7 +44,6 @@ export default {
 
   modules: [
     '@nuxtjs/axios',
-    '@nuxtjs/pwa',
     [
       'nuxt-social-meta',
       {
@@ -76,6 +64,18 @@ export default {
     '@nuxtjs/auth-next',
     'nuxt-client-init-module',
   ],
+
+  pwa: {
+    manifest: {
+      name: 'dimasrakas',
+      short_name: 'dimasrakas',
+      lang: 'fa',
+      useWebmanifestExtension: false,
+    },
+    workbox: {
+      dev: true, // or use a global variable to track the current NODE_ENV, etc to determine dev mode
+    },
+  },
 
   axios: {},
   auth: {
