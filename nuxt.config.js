@@ -14,14 +14,14 @@ export default {
   pwa: {
     manifest: {
       lang: 'en',
-      name: '@dimasrakas - Project',
-      short_name: '@dimasrakas - Project',
+      name: 'dimasrakas',
+      short_name: 'dimasrakas',
       display: 'standalone',
       theme_color: '#007aff',
     },
     icons: {
       /* icon options */
-      iconFileName: 'pwa-icon.svg',
+      iconFileName: process.env.NODE_ENV === 'staging' ? 'icon.png' : 'pwa-ordercollection.png',
     },
   },
   css: [],
