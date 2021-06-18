@@ -3,15 +3,36 @@ import i18n from './i18n'
 export default {
   target: 'static',
   head: {
-    title: 'Nuxt Starter Template by dimasrakas',
+    title: 'Nuxt Starter Template by @dimasrakas',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' }],
+  },
+  pwa: {
+    manifest: {
+      lang: 'en',
+      name: '@dimasrakas - Project',
+      short_name: '@dimasrakas - Project',
+      display: 'standalone',
+      theme_color: '#007aff',
+    },
+    icons: {
+      /* icon options */
+      iconFileName: 'pwa-icon.svg',
+    },
   },
   css: [],
+  layoutTransition: {
+    name: 'zoom-fade',
+    mode: 'out-in',
+  },
+  pageTransition: {
+    name: 'zoom-fade',
+    mode: 'out-in',
+  },
   plugins: [],
   components: ['~/components', '~/components/icons/Md'],
   buildModules: [
@@ -38,15 +59,15 @@ export default {
     [
       'nuxt-social-meta',
       {
-        url: 'Site url',
-        title: 'Title',
-        site_name: 'Site name',
-        description: 'Site description',
-        img: 'Link to image in static folder',
+        url: 'https://nuxt.starter.dimasrakas.com',
+        title: 'Nuxt Starter Template by @dimasrakas',
+        site_name: 'Nuxt Starter Template by @dimasrakas',
+        description: '@dimasrakas - A small man with shuriken ambition',
+        img: '/preview.jpg',
         locale: 'en_US',
-        twitter: '@user',
-        twitter_card: 'summary_large_image',
-        themeColor: '#theme-color',
+        twitter: '@dimasrakas',
+        twitter_card: '/preview.jpg',
+        themeColor: '#0064F9',
       },
     ],
     '@nuxtjs/moment',
