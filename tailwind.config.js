@@ -15,7 +15,7 @@ module.exports = {
   theme: {
     fontFamily: {
       display: ['Poppins', 'sans-serif'],
-      sans: ['Hind Madurai', 'sans-serif'],
+      sans: ['Open Sans', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
     },
 
@@ -78,6 +78,7 @@ module.exports = {
     extend: {},
   },
   plugins: [
+    require('@tailwindcss/line-clamp'),
     require('@tailwindcss/forms'),
     require('@tailwindcss/typography'),
     require('@tailwindcss/aspect-ratio'),

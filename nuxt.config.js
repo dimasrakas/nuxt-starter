@@ -24,7 +24,7 @@ export default {
       '@nuxtjs/google-fonts',
       {
         families: {
-          Poppins: true,
+          'Open+Sans': [100, 200, 300, 400, 500, 600, 700, 800],
           'Hind+Madurai': true,
           Inter: [100, 200, 300, 400, 500, 600, 700],
         },
